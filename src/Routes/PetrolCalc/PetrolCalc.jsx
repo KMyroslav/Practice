@@ -14,6 +14,7 @@ export default function PetrolCalc() {
   };
 
   return (
+    <div className={styles.container}>
       <form className={styles.form} onInput={countTravelCost}>
         <label htmlFor="distance">Distance (km | mile)</label>
         <input

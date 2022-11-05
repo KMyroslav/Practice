@@ -1,0 +1,89 @@
+.container {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 20%);
+  border-radius: 5px;
+  padding: 30px 20px;
+  margin: 20px auto;
+  max-width: 320px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.form label {
+  padding-left: 10px;
+}
+
+.sumWrapper {
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 0 auto;
+  width: 240px;
+  height: 240px;
+
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 50%);
+  background-color: rgb(164, 230, 96);
+}
+
+.costTitle {
+  text-align: center;
+}
+
+.travelCost {
+  padding-top: 10px;
+  color: rgba(255, 255, 255, 90%);
+  font-size: 36px;
+}
+
+.travelCostLiters {
+  text-align: center;
+  color: rgba(255, 255, 255, 100%);
+  font-size: 18px;
+}
+
+.complete {
+  border: 3px solid rgb(164, 230, 96);
+  border-radius: 5px;
+}
+
+.curve {
+  /*   outline: 1px solid red; */
+  position: absolute;
+  width: 250%;
+  height: 69%;
+  bottom: 0;
+  left: 0;
+}
+
+.curve:nth-child(3n-1) {
+  animation: wave ease-in-out 9s alternate infinite;
+}
+.curve:nth-of-type(2n) {
+  animation: wave ease-in-out 5s alternate infinite;
+}
+.curve:nth-of-type(3n) {
+  animation: wave ease-in-out 7s alternate-reverse infinite;
+}
+
+@keyframes wave {
+  0% {
+    transform: translate(0%, 10%);
+  }
+  100% {
+    transform: translate(-60%, 15%);
+  }
+}
