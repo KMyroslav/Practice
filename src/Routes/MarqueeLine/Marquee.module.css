@@ -1,0 +1,35 @@
+.pickerTitle {
+  text-align: center;
+}
+
+.itemList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  flex-basis: content;
+  margin: 8px;
+  max-width: 100px;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.isActive {
+  outline: 5px double yellowgreen;
+  border-radius: 3px;
+}
+
+.showTitle {
+  text-align: center;
+}
+.marqueeWrapper {
+}
+.marqueeItemList {
+}
+.marqueeItem {
+}
