@@ -1,0 +1,26 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.listItem{
+    padding: 20px;
+    margin: 10px;
+    background-color: darkcyan;
+    margin: 5px;
+    cursor: grab;    
+}
+
+.btn{
+    width: 100%;
+    margin: 10px 0;
+    font-weight: 700;
+}
