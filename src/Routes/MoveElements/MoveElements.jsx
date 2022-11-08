@@ -1,4 +1,5 @@
 import styles from "./MoveElements.module.css";
+import numToWord from "../../Utils/numToWord";
 import { useState } from "react";
 
 export default function MoveElements() {
@@ -9,6 +10,19 @@ export default function MoveElements() {
   ]);
 
   return (
+    <>
+      <button
+        type="button"
+        className={styles.btn}
+        onClick={() => {
+          setitems([
+            ...items,
+            `${items.length} title ${numToWord(items.length)} `,
+          ]);
+        }}
+      >
+        Add
+      </button>
       <div
         className={styles.wrapper}
         onPointerDown={(e) => {
@@ -55,5 +69,6 @@ export default function MoveElements() {
           ))}
         </ul>
       </div>
+    </>
   );
 }
